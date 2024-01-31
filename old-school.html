@@ -2,11 +2,12 @@
 =========================================================
 Name        : index.html
 Assignment  : Lab 3 Exercise B
-Author(s)   : Mahdi Ansari, William Arthur Philip Louis
-Submission  : May 21, 2030
+Author(s)   : Cesar Garcia, Wassim Belghache
+Submission  : January 31st, 2024
 Description : Understanding Old-School HTML Layouts.
 =========================================================
 -->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,25 +15,25 @@ Description : Understanding Old-School HTML Layouts.
     <style>
         table { width: 100%; }
         td { vertical-align: top;}
-        /*
-        td { border: 1px dashed gray; } 
-        */
+        
+        td { border: 1px dashed gray; }
+        
         #header, #footer { background-color: #f2f2f2; text-align: center; padding: 10px; }
         #menu { width: 150px; background-color: #e6e6e6; }
         #main { padding: 15px; }
         #footer { position: fixed; bottom: 0; width: 100%;}
 
         .news-item { padding: 10px; }
-        /*
+        
         .large { width: 100%; }
         .medium { width: 70%; }
         .small { width: 30%; }
-        */
+        
     </style>
 </head>
 <body>
     
-<table cellpadding="0" cellspacing="0">
+<table cellpadding="0" cellspacing="0"> 
     <tr>
         <td colspan="2" id="header">Header</td>
     </tr>
@@ -64,6 +65,8 @@ Description : Understanding Old-School HTML Layouts.
                         </article>
                     </td>
                 </tr>
+                
+                <table id="main-table">
                 <tr>
                     
                     <td class="small news-item" colspan="2">
@@ -90,7 +93,7 @@ Description : Understanding Old-School HTML Layouts.
                     <td class="medium news-item">
                         <!-- Medium news item -->
                         <header>
-                            <h1>Mahdi Ansari Takes a Historic Spacewalk Near the ISS</h1>
+                            <h1>Cesar and Wassim a Historic Spacewalk Near the ISS</h1>
                         </header>
 
                         <img src="images/medium.jpg" alt="Medium Image" width="100%">
@@ -104,9 +107,9 @@ Description : Understanding Old-School HTML Layouts.
                             <h3>Pushing the Boundaries of Science</h3>
                             <p>The successful spacewalk not only demonstrates human resilience but also advances our understanding of space and our capabilities to explore further into the unknown.</p>
                         </article>
-                    </td>                
-                    
-                </tr>
+                    </td>
+                </tr>              
+                </table>
             </table>
             
         </td>
